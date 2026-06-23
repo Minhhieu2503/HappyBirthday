@@ -952,4 +952,39 @@ footer{
 .gift-carousel-item:nth-child(4) { --item-transform: rotateY(216deg) translateZ(220px); }
 .gift-carousel-item:nth-child(5) { --item-transform: rotateY(288deg) translateZ(220px); }
 
+/* Mobile responsiveness for iPhone 12 Pro, 17 Pro Max & other mobile screens */
+@media (max-width: 600px) {
+  #gift-close {
+    top: 16px;
+    right: 16px;
+    padding: 8px 18px;
+    font-size: 0.85rem;
+  }
+  .gift-carousel-stage {
+    bottom: 14%;
+    height: 140px;
+    perspective: 800px;
+  }
+  .gift-carousel-container {
+    width: 100px;
+    height: 100px;
+  }
+  .gift-carousel-item {
+    width: 90px;
+    height: 90px;
+    left: 5px;
+    top: 5px;
+  }
+  /* Decrease radius (translateZ) on mobile to fit screen width */
+  .gift-carousel-item:nth-child(1) { --item-transform: rotateY(0deg) translateZ(110px); }
+  .gift-carousel-item:nth-child(2) { --item-transform: rotateY(72deg) translateZ(110px); }
+  .gift-carousel-item:nth-child(3) { --item-transform: rotateY(144deg) translateZ(110px); }
+  .gift-carousel-item:nth-child(4) { --item-transform: rotateY(216deg) translateZ(110px); }
+  .gift-carousel-item:nth-child(5) { --item-transform: rotateY(288deg) translateZ(110px); }
+  
+  .gift-carousel-item:hover {
+    transform: var(--item-transform) translateZ(30px) scale(1.12) !important;
+  }
+}
+
 
