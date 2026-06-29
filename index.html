@@ -18,11 +18,11 @@
 ════════════════════════════════════════════════════════════ -->
   <div id="trivia-screen">
     <div class="trivia-box">
-      <span class="trivia-lock">🔐</span>
-      <h1 class="trivia-heading">Vào Được Không Nào?</h1>
-      <p class="trivia-sub">Trả lời đúng để mở trang bí mật nhé~ 💕</p>
+      <span class="trivia-lock" id="trivia-lock-icon">🔐</span>
+      <h1 class="trivia-heading" id="trivia-heading-text">Vào Được Không Nào?</h1>
+      <p class="trivia-sub" id="trivia-sub-text">Trả lời đúng để mở trang bí mật nhé~ 💕</p>
 
-      <div class="trivia-progress">
+      <div class="trivia-progress" id="trivia-progress-dots">
         <div class="trivia-dot active" id="dot-0"></div>
         <div class="trivia-dot" id="dot-1"></div>
         <div class="trivia-dot" id="dot-2"></div>
@@ -31,9 +31,20 @@
 
       <p id="trivia-question"></p>
       <p class="trivia-hint" id="trivia-hint"></p>
-      <input type="text" id="trivia-input" placeholder="Câu trả lời của em..." autocomplete="off" autocorrect="off"
-        spellcheck="false" />
-      <button id="trivia-submit">Kiểm Tra ✨</button>
+
+      <!-- Mode 1: Quiz Inputs -->
+      <div id="quiz-input-area">
+        <input type="text" id="trivia-input" placeholder="Câu trả lời của em..." autocomplete="off" autocorrect="off"
+          spellcheck="false" />
+        <button id="trivia-submit">Kiểm Tra ✨</button>
+      </div>
+
+      <!-- Mode 2: Interactive Love verification -->
+      <div id="love-buttons-area" class="love-buttons-container" style="display: none;">
+        <button id="love-yes-btn">Có chứ 🥰</button>
+        <button id="love-no-btn">Không 😢</button>
+      </div>
+
       <p id="trivia-error"></p>
     </div>
   </div>

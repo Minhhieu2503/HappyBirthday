@@ -142,6 +142,7 @@ class YouTubeMusic {
 // ── App Init ─────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
   const confetti = new Confetti();
+  window.confetti = confetti;
   const music    = new YouTubeMusic(); // loads YT API in background
   const loveCard = new LoveCard();
   let starfield  = null;
