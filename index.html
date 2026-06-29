@@ -18,7 +18,10 @@
 ════════════════════════════════════════════════════════════ -->
   <div id="trivia-screen">
     <div class="trivia-box">
-      <span class="trivia-lock" id="trivia-lock-icon">🔐</span>
+      <img
+        src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzF0dThnODJ0bXZzN3V0c2VxYXhrc2NjZWU3NGdpNjRxcXkxbW1mZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1JmGiBtqTuehfYxuy9/giphy.gif"
+        alt="Cute Cat" class="trivia-cat-gif" />
+      <span class="trivia-lock" id="trivia-lock-icon" style="display:none;">🔐</span>
       <h1 class="trivia-heading" id="trivia-heading-text">Vào Được Không Nào?</h1>
       <p class="trivia-sub" id="trivia-sub-text">Trả lời đúng để mở trang bí mật nhé~ 💕</p>
 
@@ -78,6 +81,8 @@
 
       <h1 class="hero-title">Chúc Mừng Sinh Nhật Em Yêu! 🎉</h1>
       <p class="hero-sub">Hôm nay là ngày đặc biệt nhất của năm — ngày của em 💝</p>
+      <video class="hero-cat-vid" autoplay loop muted playsinline
+        src="https://v1.pinimg.com/videos/mc/720p/2e/f5/55/2ef5555ba9d57e4ca60d2e782107f462.mp4"></video>
 
       <!-- CSS Cake -->
       <div class="cake-wrap">
@@ -218,13 +223,13 @@
      LOVE CARD OVERLAY (JS builds content dynamically)
 ════════════════════════════════════════════════════════════ -->
   <div id="love-card-overlay">
-  <div id="love-card-frame">
-    <button id="card-close">✕</button>
-    <img class="cupid cupid-left"  src="cupid.png" alt=""/>
-    <img class="cupid cupid-right" src="cupid.png" alt=""/>
-    <!-- left & right panels built by card.js -->
+    <div id="love-card-frame">
+      <button id="card-close">✕</button>
+      <img class="cupid cupid-left" src="cupid.png" alt="" />
+      <img class="cupid cupid-right" src="cupid.png" alt="" />
+      <!-- left & right panels built by card.js -->
+    </div>
   </div>
-</div>
 
   <!-- ═══════════════════════════════════════════════════════════
      SPECIAL GIFT SCREEN (HTML5 Canvas Beating Heart + 3D Carousel)
@@ -235,37 +240,42 @@
     <div class="gift-heart-container">
       <canvas id="pinkboard"></canvas>
     </div>
-    
+
     <div class="gift-carousel-stage">
       <div class="gift-carousel-container">
         <div class="gift-carousel-item">
-          <img src="asset/anh1.jpg" class="heart-clipped" alt=""/>
+          <img src="asset/anh1.jpg" class="heart-clipped" alt="" />
           <svg class="heart-glow-ring" viewBox="0 0 100 100">
-            <path d="M 50, 12 C 45, 5, 35, 0, 25, 0 C 10, 0, 0, 12, 0, 30 C 0, 60, 35, 80, 50, 100 C 65, 80, 100, 60, 100, 30 C 100, 12, 90, 0, 75, 0 C 65, 0, 55, 5, 50, 12 Z" />
+            <path
+              d="M 50, 12 C 45, 5, 35, 0, 25, 0 C 10, 0, 0, 12, 0, 30 C 0, 60, 35, 80, 50, 100 C 65, 80, 100, 60, 100, 30 C 100, 12, 90, 0, 75, 0 C 65, 0, 55, 5, 50, 12 Z" />
           </svg>
         </div>
         <div class="gift-carousel-item">
-          <img src="asset/anh2.jpg" class="heart-clipped" alt=""/>
+          <img src="asset/anh2.jpg" class="heart-clipped" alt="" />
           <svg class="heart-glow-ring" viewBox="0 0 100 100">
-            <path d="M 50, 12 C 45, 5, 35, 0, 25, 0 C 10, 0, 0, 12, 0, 30 C 0, 60, 35, 80, 50, 100 C 65, 80, 100, 60, 100, 30 C 100, 12, 90, 0, 75, 0 C 65, 0, 55, 5, 50, 12 Z" />
+            <path
+              d="M 50, 12 C 45, 5, 35, 0, 25, 0 C 10, 0, 0, 12, 0, 30 C 0, 60, 35, 80, 50, 100 C 65, 80, 100, 60, 100, 30 C 100, 12, 90, 0, 75, 0 C 65, 0, 55, 5, 50, 12 Z" />
           </svg>
         </div>
         <div class="gift-carousel-item">
-          <img src="asset/anh3.jpg" class="heart-clipped" alt=""/>
+          <img src="asset/anh3.jpg" class="heart-clipped" alt="" />
           <svg class="heart-glow-ring" viewBox="0 0 100 100">
-            <path d="M 50, 12 C 45, 5, 35, 0, 25, 0 C 10, 0, 0, 12, 0, 30 C 0, 60, 35, 80, 50, 100 C 65, 80, 100, 60, 100, 30 C 100, 12, 90, 0, 75, 0 C 65, 0, 55, 5, 50, 12 Z" />
+            <path
+              d="M 50, 12 C 45, 5, 35, 0, 25, 0 C 10, 0, 0, 12, 0, 30 C 0, 60, 35, 80, 50, 100 C 65, 80, 100, 60, 100, 30 C 100, 12, 90, 0, 75, 0 C 65, 0, 55, 5, 50, 12 Z" />
           </svg>
         </div>
         <div class="gift-carousel-item">
-          <img src="asset/anh4.jpg" class="heart-clipped" alt=""/>
+          <img src="asset/anh4.jpg" class="heart-clipped" alt="" />
           <svg class="heart-glow-ring" viewBox="0 0 100 100">
-            <path d="M 50, 12 C 45, 5, 35, 0, 25, 0 C 10, 0, 0, 12, 0, 30 C 0, 60, 35, 80, 50, 100 C 65, 80, 100, 60, 100, 30 C 100, 12, 90, 0, 75, 0 C 65, 0, 55, 5, 50, 12 Z" />
+            <path
+              d="M 50, 12 C 45, 5, 35, 0, 25, 0 C 10, 0, 0, 12, 0, 30 C 0, 60, 35, 80, 50, 100 C 65, 80, 100, 60, 100, 30 C 100, 12, 90, 0, 75, 0 C 65, 0, 55, 5, 50, 12 Z" />
           </svg>
         </div>
         <div class="gift-carousel-item">
-          <img src="asset/anh5.jpg" class="heart-clipped" alt=""/>
+          <img src="asset/anh5.jpg" class="heart-clipped" alt="" />
           <svg class="heart-glow-ring" viewBox="0 0 100 100">
-            <path d="M 50, 12 C 45, 5, 35, 0, 25, 0 C 10, 0, 0, 12, 0, 30 C 0, 60, 35, 80, 50, 100 C 65, 80, 100, 60, 100, 30 C 100, 12, 90, 0, 75, 0 C 65, 0, 55, 5, 50, 12 Z" />
+            <path
+              d="M 50, 12 C 45, 5, 35, 0, 25, 0 C 10, 0, 0, 12, 0, 30 C 0, 60, 35, 80, 50, 100 C 65, 80, 100, 60, 100, 30 C 100, 12, 90, 0, 75, 0 C 65, 0, 55, 5, 50, 12 Z" />
           </svg>
         </div>
       </div>
@@ -363,7 +373,8 @@
   <svg width="0" height="0" style="position: absolute;">
     <defs>
       <clipPath id="heart-clip" clipPathUnits="objectBoundingBox">
-        <path d="M 0.5, 0.12 C 0.45, 0.05, 0.35, 0, 0.25, 0 C 0.1, 0, 0, 0.12, 0, 0.3 C 0, 0.6, 0.35, 0.8, 0.5, 1 C 0.65, 0.8, 1, 0.6, 1, 0.3 C 1, 0.12, 0.9, 0, 0.75, 0 C 0.65, 0, 0.55, 0.05, 0.5, 0.12 Z" />
+        <path
+          d="M 0.5, 0.12 C 0.45, 0.05, 0.35, 0, 0.25, 0 C 0.1, 0, 0, 0.12, 0, 0.3 C 0, 0.6, 0.35, 0.8, 0.5, 1 C 0.65, 0.8, 1, 0.6, 1, 0.3 C 1, 0.12, 0.9, 0, 0.75, 0 C 0.65, 0, 0.55, 0.05, 0.5, 0.12 Z" />
       </clipPath>
     </defs>
   </svg>
